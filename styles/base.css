@@ -1,5 +1,5 @@
 body {
-  font-family: "Bakbak One", sans-serif;;
+  font-family: Arial, sans-serif;
     display: grid;
     height: 100vh;
     max-width: 1600px;
@@ -7,8 +7,10 @@ body {
   }
   
   header {
-   
-	 
+    font-family: "Playwrite PT", cursive; 
+    font-optical-sizing: auto;
+    font-weight: 200; 
+    font-style: normal;
 	  align-items: center;
 	  justify-content: center;
 	  padding: 20px;
