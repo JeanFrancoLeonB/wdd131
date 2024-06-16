@@ -2,7 +2,6 @@ body {
   font-family: Arial, sans-serif;
     display: grid;
     height: 100vh;
-    grid-template: auto 1fr auto / 300px 1fr auto;
     max-width: 1600px;
     margin: 0 auto;
   }
@@ -22,7 +21,7 @@ body {
   }
   nav {
     background-color: #000000;
-    max-width: auto;
+
     text-align: center;
 
   }
@@ -91,6 +90,7 @@ body {
     text-align: center;
    }
  h2{
+  align-content: center;
   background: #ffde59;
   text-align: center;
  }
@@ -122,7 +122,6 @@ margin-left: 2rem;
 }
 
 .flag{
-  width: 150;
   height: auto;
   margin-right: 2rem;
   }
