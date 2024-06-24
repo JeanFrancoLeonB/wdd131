@@ -35,7 +35,6 @@ h2 {
 }
 
 nav {
-    max-width: auto;
     margin: 1rem auto;
 }
 
@@ -91,7 +90,6 @@ nav {
 }
 
 .stuff {
-    margin: 0.5m;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #bed;
     max-width: 580px;
