@@ -1,17 +1,16 @@
 
 /* large view navigation ************************************/
 @media (min-width: 37.5em) {
+
+
 	h1 {
-		font-size: 2.5rem;
+		font-size: 1.9rem;
 		margin-left: 0;
 		text-align: center;
 	}
-
 	h2 {
 		font-size: 2rem;
-		text-align: center;
 	}
-
 	#menu {
 		display: none; /* hide hamburger button */
 	}
