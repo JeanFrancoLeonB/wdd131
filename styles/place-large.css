@@ -1,0 +1,50 @@
+/* large view navigation ************************************/
+@media (min-width: 37.5em) {
+
+    .hero {
+        position: relative; /* Asegura que .hero sea un contenedor posicionado */
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .hero .box1 h2,
+    .hero .box2 h2 {
+        background-color: #514d4dab; /* Color de fondo del h2 */
+        color: white;
+        padding: 0.5rem; /* Ajusta el espaciado interior del h2 */
+        margin: 0; /* Elimina el margen predeterminado del h2 */
+    }
+
+
+
+    .hero .box1 {
+        position: absolute;
+        top: 0.5rem; /* Ajusta la distancia desde el borde superior */
+        left: 0.5rem; /* Ajusta la distancia desde el borde izquierdo */
+        width: 25%; /* Ancho del box1 */
+        background-color: rgba(254, 255, 254, 0.5); /* Fondo transparente con opacidad */
+        padding: 1rem; /* Añade espaciado interior según lo necesites */
+    }
+
+    .hero .box2 {
+        position: absolute;
+        bottom: 0.5rem; /* Ajusta la distancia desde el borde inferior */
+        right: 0.5rem; /* Ajusta la distancia desde el borde derecho */
+        width: 25%; /* Ancho del box2 */
+        background-color: rgba(254, 255, 254, 0.5);
+        padding: 1rem; /* Añade espaciado interior según lo necesites */
+    }
+}
+
+@media only screen and (min-width : 60em) {
+
+
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -9,7 +9,8 @@
     <meta name="author" content="Student name: Jean Franco León Bejarano">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Playwrite+PT:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Playwrite+PT:wght@200&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css">
     <script defer src="scripts/place.js"></script>
@@ -17,17 +18,41 @@
 
 <body>
     <header>
-        <h1>Temple Album</h1>
-
+        <h1>Peru</h1>
     </header>
     <main>
-       
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 600px)">
+                <img src="images/hero-small.webp" alt="Peru-Penguin" width="500" height="250">
+            </picture>
+            <section class="box1">
+                <div>
+                    <h2>Data</h2>
+                </div>
+                <p>Area: <span id="area">1,285,216 km</span></p>
+                <p>Population: <span id="population">33,000,000</span></p>
+                <p>Capital: <span id="capital">Lima</span></p>
+                <p>Languages:<span id="languages">Spanish and Quechua</span></p>
+                <p>Currency:<span id="currency">Peruvian Sol (PEN)</span></p>
+                <p>Time Zone:<span id="timezone">UTC-5</span></p>
+                <p>Calling Code:<span id="callingcode">+51</span></p>
+                <p>Internet TLD:<span id="internet">.pe</span></p>
+            </section>
+            <section class="box2">
+                <h2>Weather</h2>
+                <p>Temperature: <span id="currently">76°F</span></p>
+                <p>Conditions: <span id="high">Sunny</span></p>
+                <p>Wind: <span id="wind">5 mph</span></p>
+                <p>Wind Chill: <span id="speed">N/A</span></p>
+            </section>
+        </div>
     </main>
 
-    <footer>&copy; <span id="copyrightyear"></span>  | Franco León | Trujillo - Perú |
+    <footer>&copy; <span id="copyrightyear"></span> | Franco León | Trujillo - Perú |
         <br> <span id="lastupdated"></span>
-        
-      </footer>
+
+    </footer>
 </body>
 
 </html>
