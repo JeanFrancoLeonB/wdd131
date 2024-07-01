@@ -14,14 +14,17 @@
 
     .hero .box1 h2 {
         background-color: #514d4dab;
-        /* Color de fondo del h2 */
         color: white;
         padding: 0.5rem;
-        /* Ajusta el espaciado interior del h2 */
         margin-top: 0;
-        /* Elimina el margen predeterminado del h2 */
         margin-left: 0;
         margin-right: 0;
+    }
+
+    .hero .box1 h2::after {
+        content: " (Data)";
+        font-size: 0.8rem;
+        color: #514d4dab;
     }
 
 

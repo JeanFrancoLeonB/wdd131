@@ -10,13 +10,20 @@ html {
     margin-right: auto;
 }
 
-header {
+:root {
+    --main-bg-color: #333; /* Example background color */
+    --main-text-color: white; /* Example text color */
+    --main-padding: 20px; /* Example padding value */
+  }
+  
+  header {
+    background: var(--main-bg-color); /* Using the global background color variable */
+    color: var(--main-text-color); /* Using the global text color variable */
+    padding: var(--main-padding); /* Using the global padding variable */
     text-align: center;
-    background: #333;
-    color: white;
-    padding: 20px;
     margin-bottom: 10px;
-}
+  }
+
 
 .hero img {
     width: 100%;
@@ -59,16 +66,20 @@ footer {
 }
 
 
-
-
 .hero .box1 h2 {
-    background-color:  #333;
-    /* Color de fondo del h2 */
+    background-color: #333;
     color: white;
     padding: 0.5rem;
-    /* Ajusta el espaciado interior del h2 */
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
+.hero .box1 h2::after {
+    content: " (Data)";
+    font-size: 0.8rem;
+    color: #333;
+}
 
 .hero .box2 h2 {
    
