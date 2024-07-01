@@ -12,7 +12,7 @@ html {
 
 header {
     text-align: center;
-    background:#333;
+    background: #333;
     color: white;
     padding: 20px;
     margin-bottom: 10px;
@@ -21,8 +21,9 @@ header {
 .hero img {
     width: 100%;
     height: auto;
-  }
-  h1 {
+}
+
+h1 {
     font-family: times, serif;
     font-size: 2.5rem;
     margin-left: 1rem;
@@ -33,10 +34,69 @@ h2 {
     margin: 1rem;
     text-align: center;
 }
+
 footer {
     background: #333;
     color: #fff;
     padding: 2rem;
     text-align: center;
     grid-column: 1 / 4;
+}
+
+.hero .box1 {
+
+    background-color: aliceblue;
+    /* Fondo transparente con opacidad */
+    padding: 1rem;
+    /* Añade espaciado interior según lo necesites */
+}
+
+.hero .box2 {
+    position: relative;
+    background-color: aliceblue;
+    padding: 1rem;
+    /* Añade espaciado interior según lo necesites */
+}
+
+
+
+
+.hero .box1 h2 {
+    background-color:  #333;
+    /* Color de fondo del h2 */
+    color: white;
+    padding: 0.5rem;
+    /* Ajusta el espaciado interior del h2 */
+}
+
+
+.hero .box2 h2 {
+   
+    color: white;
+    padding: 0.5rem;
+}
+
+
+.hero .box1 p,
+.hero .box2 p {
+    padding: 0.3rem;
+    text-align: center;
+}
+
+
+
+
+.hero .box2 div {
+    background-color:  #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.hero .box2 img {
+    width: 50px;
+    /* Ajusta el ancho de la imagen según sea necesario */
+    height: auto;
+    margin: 0;
 }
