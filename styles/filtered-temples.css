@@ -10,6 +10,15 @@ html {
     margin-right: auto;
 }
 
+
+header main {
+
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 20px;
+}
+
 header {
     display: flex;
     align-items: center; /* Alinear elementos verticalmente */
@@ -92,16 +101,15 @@ h2 {
     max-width: 580px;
     height: 100vh;
 }
-.container {
-    display: block;
-    align-items: center;
-    justify-items: center;
-    width: 100%;
-    gap: 5px;
-  }
+main {
+    text-align: center; /* Alinear el contenido del main al centro */
+    padding: 20px;
+}
 
-figcaption {
-    text-align: center;
+.container {
+    display: grid;
+    gap: 10px;
+    justify-content: center; /* Centrar el contenido de la grid horizontalmente */
 }
 
 figure {
@@ -113,7 +121,7 @@ figure {
     unicode-bidi: isolate;
 }
 
-figure img {
+img {
     width: 100%;
     height: auto;
 }

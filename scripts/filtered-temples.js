@@ -40,7 +40,7 @@ const temples = [
     },
     {
         templeName: "Washington D.C.",
-        location: "Kensington, Maryland, United States",
+        location: "Maryland, United States",
         dedicated: "1974, November, 19",
         area: 156558,
         imageUrl:

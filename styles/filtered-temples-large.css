@@ -31,6 +31,12 @@
         display:grid;
         grid-template-columns: 1fr 1fr;
     }
+
+	section {
+		background: #333;
+		color: white;
+	}
+
 }
 
 @media only screen and (min-width :  60em){
@@ -42,6 +48,10 @@
     }
     .container {
         grid-template-columns: 1fr 1fr 1fr;
+		width: 100%;
+		margin: 0 auto;
+		max-width: 1000px;
+		padding: 0 20px;
     }
     .container img:hover {
         box-shadow: 0 0 50px #000;
