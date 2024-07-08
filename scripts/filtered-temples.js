@@ -61,16 +61,67 @@ const temples = [
         area: 116642,
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
-    }
-
-
+    },
+    {
+        templeName: "Sao Paulo Brazil",
+        location: "Sao Paulo, Brazil",
+        dedicated: "1978, Octubre, 30",
+        area: 165167,
+        imageUrl: 
+        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sao-paulo-brazil/400x250/sao-paulo-brazil-temple-lds-246609-wallpaper.jpg"
+            
+    },
+    {
+        templeName: "Salt Lake City",
+        location: "Salt Lake City, Utah, United States",
+        dedicated: "1893, April, 6",
+        area: 253015,
+        imageUrl: 
+        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/2018/400x250/slctemple7.jpg"
+    },
+    {
+        templeName: "Madrid Spain",
+        location: "Madrid, Spain",
+        dedicated: "1999, March, 19",
+        area: 57340,
+        imageUrl: 
+        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/madrid-spain/400x250/madrid-spain-mormon-temple-954942-wallpaper.jpg"
+    },
 ];
-createTempleCard(temples);
+/*createTempleCard(temples);
 
 const nonutahlink = document.querySelector("#nonutah");
 
 nonutahlink.addEventListener("click", () => {
     createTempleCard(temples.filter(temple => !temple.location.includes("Utah")));
+});*/
+
+
+createTempleCard(temples);
+const oldLink = document.querySelector("#old");
+
+oldLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => parseInt(temple.dedicated.split(',')[0]) < 1900));
+});
+
+
+
+const newLink = document.querySelector("#new");
+
+newLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => parseInt(temple.dedicated.split(',')[0]) > 2000));
+});
+
+const largeLink = document.querySelector("#large");
+
+largeLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area > 90000));
+});
+
+const smallLink = document.querySelector("#small");
+
+smallLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area < 10000));
 });
 
 
@@ -86,9 +137,9 @@ function createTempleCard(filteredTemples) {
         let img = document.createElement("img");
 
         name.textContent = temple.templeName;
-        location.innerHTML = '<span class="label">Location:</span> ${temple.location}';
-        dedication.innerHTML = '<span class="label">Dedicated:</span> ${temple.dedicated}';
-        area.innerHTML = '<span class="label">Size:</span> ${temple.area} sq ft';
+        location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+        dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
+        area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
         img.setAttribute("src", temple.imageUrl);
         img.setAttribute("alt", "${temple.templeName} Temple");
         img.setAttribute("loading", "lazy");
