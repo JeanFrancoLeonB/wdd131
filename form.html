@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - W04 Assignment: Picture Album Temple- Franco León</title>
+    <meta name="description" content="WDD 131 - W05 Assignment: Picture Album Temple- Franco León">
+    <meta name="author" content="Student name: Jean Franco León Bejarano">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Playwrite+PT:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script defer src="scripts/form.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form class="form-body" id="product-review-form" action="review.html" method="get">
+            <label for="productName">Product Name</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <fieldset class="radio">
+                <legend>Overall Rating</legend>
+                <label>
+                    <input type="radio" name="rating" value="1" required> ☆
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="2" required> ☆☆
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="3" required> ☆☆☆
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="4" required> ☆☆☆☆
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="5" required> ☆☆☆☆☆
+                </label>
+            </fieldset>
+
+            <label for="installationDate">Date of Installation</label>
+            <input type="date" id="installationDate" name="installationDate" required>
+
+            <fieldset>
+                <legend>Which features did you find useful in the product? (Check all that apply)</legend>
+                <label>
+                    <input type="checkbox" name="features" value="Durability"> Durability
+                </label>
+                <label>
+                    <input type="checkbox" name="features" value="Ease of Use"> Ease of Use
+                </label>
+                <label>
+                    <input type="checkbox" name="features" value="Performance"> Performance
+                </label>
+                <label>
+                    <input type="checkbox" name="features" value="Design"> Design
+                </label>
+            </fieldset>
+
+            <label for="writtenReview">Written Review (Optional)</label>
+            <textarea id="writtenReview" name="writtenReview"></textarea>
+
+            <label for="userName">Your Name (Optional)</label>
+            <input type="text" id="userName" name="userName">
+
+            <input type="submit" value="Post Review">
+        </form>
+
+
+    </main>
+
+    <footer>&copy; <span id="copyrightyear"></span>  | Franco León | Trujillo - Perú |
+        <br> <span id="lastupdated"></span>
+        
+      </footer>
+</body>
+
+</html>
