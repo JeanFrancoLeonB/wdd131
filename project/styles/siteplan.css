@@ -87,6 +87,20 @@ table{
     font-weight: 700;
 }
 
+section {
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+    text-align: center;
+}
+
+.wireframe{
+    padding: 1em;
+}
+
+.wireframe p {
+    margin: 1em;
+}
 /* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
     display: block;
