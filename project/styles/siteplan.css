@@ -95,8 +95,7 @@ table{
 }
 
 .navigation a:hover {
-    background-color: #bbb;
-    color: #333;
+    color: yellow;
     font-weight: 700;
 }
 
