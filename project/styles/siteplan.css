@@ -34,6 +34,19 @@ h2 {
     text-align: left;
 }
 
+p {
+    margin: 1em;
+    text-align: justify;
+}
+
+p.hf{
+    font-family: 'Roboto', sans-serif;
+}
+
+p.bf{
+    font-family: 'Roboto', serif;
+}
+
 table{
     border: 1px solid #000;
     border-collapse: collapse;
