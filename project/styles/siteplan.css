@@ -99,7 +99,7 @@ table{
     font-weight: 700;
 }
 
-section {
+article {
     display: flex;
     flex-direction: row;
     margin: 1em;
