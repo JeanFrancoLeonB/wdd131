@@ -184,6 +184,20 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
     color: yellow;
 }
+
+.container {
+    display: block;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    gap: 5px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+}
+
 footer {
     background: #333;
     color: #fff;
