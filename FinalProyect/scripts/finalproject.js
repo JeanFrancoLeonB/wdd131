@@ -16,11 +16,11 @@ hamButton.addEventListener('click', () => {
 document.addEventListener('DOMContentLoaded', () => {
     const pnameselect = document.getElementById('pname');
     const products = [
-        { id: 'fc-1888', name: "flux capacitor", avgRating: 4.5 },
-        { id: 'fc-2050', name: "power laces", avgRating: 4.7 },
-        { id: 'fs-1987', name: "time circuits", avgRating: 3.5 },
-        { id: 'ac-2000', name: "low voltage reactor", avgRating: 3.9 },
-        { id: 'jj-1969', name: "warp equalizer", avgRating: 5.0 }
+        { id: 'fc-1888', name: "T- Shirt", avgRating: 4.5 },
+        { id: 'fc-2050', name: "Jacket", avgRating: 4.7 },
+        { id: 'fs-1987', name: "Sweatsuit", avgRating: 3.5 },
+        { id: 'ac-2000', name: "Cleats", avgRating: 3.9 },
+        { id: 'jj-1969', name: "Sneackers", avgRating: 5.0 }
     ];
 
     products.forEach(product => {
@@ -39,81 +39,81 @@ document.addEventListener('DOMContentLoaded', () => {
         const temples = [
            
                {
-                templeName: "Madrid Spain",
-                location: "Madrid, Spain",
-                dedicated: "1999, March, 19",
-                area: 57340,
+                templeName: "Juventus, Alternative T-Shirt",
+                location: " FL0462",
+                dedicated: "Juventus",
+                area: 40,
                 imageUrl: 
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/dbdc66d579f44971beccc7549721badc_9366/Camiseta_Prepartido_Juventus_Azul_IW0462_HM1.jpg"
             },
             
             {
-                templeName: "Aba Nigeria",
-                location: "Aba, Nigeria",
-                dedicated: "2005, August, 7",
-                area: 11500,
+                templeName: "Peru, Casual T-Shirt",
+                location: "FL0463",
+                dedicated: "Peru",
+                area: 35,
                 imageUrl:
-                    "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/aeec15ccd99c41d5a1edaf3a00cadb65_9366/polo-adicolor-classics-3-tiras.jpg"
+                    "https://assets.adidas.com/images/w_600,f_auto,q_auto/d09da71865df4f1db92075f1a9319d9b_9366/Polo_adicolor_Seleccion_Peruana_Blanco_IU2741_HM1.jpg"
             },
             
             {
-                templeName: "Payson Utah",
-                location: "Payson, Utah, United States",
-                dedicated: "2015, June, 7",
-                area: 96630,
+                templeName: "Real Madrid, T-shirt",
+                location: "FL0464",
+                dedicated: "Real Madrid",
+                area: 70,
                 imageUrl:
                     "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/78b62417f1e042aeb25e3353d278de3b_9366/Camiseta_local_Real_Madrid_24-25_Authentic_Blanco_IX8095_HM1.jpg"
             },
             {
-                templeName: "Washington D.C.",
-                location: "Maryland, United States",
-                dedicated: "1974, November, 19",
-                area: 156558,
+                templeName: "Juventus, T-Shirt",
+                location: "FL0465",
+                dedicated: "Juventus",
+                area: 70,
                 imageUrl:
                     "https://assets.adidas.com/images/w_600,f_auto,q_auto/390216c9ba9840be89c1c3e361fca83e_9366/Camiseta_Uniforme_Local_Juventus_23-24_Multicolor_HR8256_HM1.jpg"
             },
             
             {
-                templeName: "Lima Perú",
-                location: "Lima, Perú",
-                dedicated: "1986, January, 10",
-                area: 9600,
+                templeName: "Manchester United, Sweatsuit",
+                location: "FL0466",
+                dedicated: "Manchester United",
+                area: 100,
                 imageUrl:
                     "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/51118f3b7936432396947422f55b1ca0_9366/Casaca_Deportiva_Manchester_United_Tejida_Multicolor_IP9190_21_model.jpg"
             },
             
             {
-                templeName: "Sao Paulo Brazil",
-                location: "Sao Paulo, Brazil",
-                dedicated: "1978, Octubre, 30",
-                area: 165167,
+                templeName: "Predator Adiddas Cleats ",
+                location: "FL0467",
+                dedicated: "Adiddas",
+                area: 80,
                 imageUrl: 
                 "https://assets.adidas.com/images/w_600,f_auto,q_auto/5f052afb59fc4bc39a7553287991f171_9366/Chimpunes_Copa_Pure_2_Elite_KT_Terreno_Firme_Beige_IF5443_HM1.jpg"
                     
             },
             
             {
-                templeName: "Mexico City Mexico",
-                location: "Mexico City, Mexico",
-                dedicated: "1983, December, 2",
-                area: 116642,
+                templeName: "Manchester United, T-shirt",
+                location: "FL0468",
+                dedicated: "Manchester United",
+                area: 70,
                 imageUrl:
                     "https://assets.adidas.com/images/w_600,f_auto,q_auto/a195f24a93c3441cb6c9f3780af09c83_9366/Camiseta_Local_Manchester_United_23-24_Rojo_IP1726_HM30.jpg"
             },
             {
-                templeName: "Yigo Guam",
-                location: "Yigo, Guam",
-                dedicated: "2020, May, 2",
-                area: 6861,
+                templeName: "Juventus, Sweatsuit",
+                location: "FL0469",
+                dedicated: "Juventus",
+                area: 100,
                 imageUrl:
                     "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5447c5c1f5ff45d3905ef3b9cffde443_9366/Casaca_Deportiva_Juventus_Tejida_Plomo_IM9865_21_model.jpg"
             },
             
             {
-                templeName: "Salt Lake City",
-                location: "Salt Lake City, Utah, United States",
-                dedicated: "1893, April, 6",
-                area: 253015,
+                templeName: "Peru, Casual Jacket",
+                location: "FL0460",
+                dedicated: "Peru",
+                area: 80,
                 imageUrl: 
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/6865f53327ff4ec4b80efdb1406e2ec8_9366/Casaca_adicolor_Seleccion_Peruana_Blanco_IU2739_HM1.jpg"
             },
@@ -137,9 +137,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 let img = document.createElement("img");
         
                 name.textContent = temple.templeName;
-                location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
-                dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
-                area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
+                location.innerHTML = `<span class="label">Code:</span> ${temple.location}`;
+                dedication.innerHTML = `<span class="label">Soccer Team:</span> ${temple.dedicated}`;
+                area.innerHTML = `<span class="label">Price:</span> $  ${temple.area} ` ;
                 img.setAttribute("src", temple.imageUrl);
                 img.setAttribute("alt", "${temple.templeName} Temple");
                 img.setAttribute("loading", "lazy");
