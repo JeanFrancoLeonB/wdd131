@@ -87,6 +87,14 @@ h1 {
     margin-left: 1rem;
 }
 
+h2.title{
+margin-top: 1em;
+margin-bottom: 1em;
+text-align: left;
+padding: 0;
+
+}
+
 form {
     max-width: 600px;
     margin: 0 auto;
@@ -193,10 +201,34 @@ form input[type="submit"]:hover {
     gap: 5px;
   }
 
+  section h3{
+padding: 10px;
+
+  }
+
+  section p{
+    padding: 5px;
+  }
+
+  .card .us {
+    text-align: justify;
+  }
+
+  .card .us h3{
+    text-align: center;
+  }
+
+
   img {
     width: 100%;
     height: auto;
 }
+
+  img.first {
+    height: 350px;
+  }
+
+
 
 footer {
     background: #333;
